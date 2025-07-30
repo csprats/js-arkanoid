@@ -110,15 +110,11 @@ function movePaddle() {
 	  if (left && paddlex > 0) {
 		paddlex -= 18;
 	}
-	//console.log(a);
-	//console.log(d);
-
 }
 
 function moveBall() {
 	
 	  ctx.beginPath();
-	  //ctx.arc(ballx, bally, ballRadius, 0, Math.PI * 2);
 	  ctx.drawImage(ballimage, ballx, bally);
 	  ctx.closePath();
 	  ballx += bx;
